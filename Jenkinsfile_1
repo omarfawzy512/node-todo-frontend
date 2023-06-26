@@ -1,6 +1,6 @@
 //Jenkins file only to tutorial example
 pipeline {
-  agent naguib
+  agent {label 'naguib'}
     
   tools {nodejs "node"}
     
@@ -8,7 +8,7 @@ pipeline {
         
     stage('Cloning Git') {
       steps {
-        git 'https://github.com/gustavoapolinario/node-todo-frontend'
+        git 'https://github.com/omarfawzy512/node-todo-frontend.git'
       }
     }
         
