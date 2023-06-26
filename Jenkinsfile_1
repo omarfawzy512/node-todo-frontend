@@ -1,6 +1,6 @@
 //Jenkins file only to tutorial example
 pipeline {
-  agent any
+  agent naguib
     
   tools {nodejs "node"}
     
